@@ -4,8 +4,30 @@
     <meta charset = "utf-8">
     <title>公共設施告示牌畫廊</title>
     <style>
-        ul{
-            gap: 100px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex; /* 將列表項目設置為彈性容器 */
+            flex-wrap: wrap; /* 允許彈性容器在需要時折行 */
+            gap: 20px; /* 設置列之間的間距 */
+        }
+
+        ul li {
+            flex: 1 1 400px; /* 設置列表項目的彈性增長，使其自動調整大小 */
+            text-align: center;
+            margin-bottom: 20px; /* 調整每個列表項目的下邊距 */
+        }
+
+        ul li img {
+            max-width: 100%; /* 圖片最大寬度為父元素寬度 */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* 讓圖片水平居中 */
         }
     </style>
 </head>
