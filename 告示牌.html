@@ -22,6 +22,17 @@
             gap: 10px;
         }
 
+        .inline-checkbox {
+            display: flex;
+            justify-content: space-between;
+            width: 400px; /* 確保寬度與圖片一致 */
+            margin-bottom: 10px;
+        }
+
+        .inline-checkbox input {
+            margin: 0 10px;
+        }
+
         .inline-images {
             display: flex;
             justify-content: center;
@@ -46,89 +57,101 @@
 <body>
     <form>
         <div class="form-group">
-            <label>
-                提醒標語(橫式)
-            </label>
-            <input type="checkbox" name="reminder-horizontal" value = "可以採用">可採用
-            <input type="checkbox" name="reminder-horizontal" value = "再想一下 謝謝!">再想一下 謝謝!
+            <label>提醒標語(橫式)</label>
+            <div class="inline-checkbox">
+                <label><input type="checkbox" name="reminder-horizontal" value="可以採用">可以採用</label>
+                <label><input type="checkbox" name="reminder-horizontal" value="再想一下 謝謝!">再想一下 謝謝!</label>
+            </div>
             <img src="image/一次拿一個，歡樂不減少 (1).png" width="400" alt="提醒標語(橫式)">
         </div>
         <div class="form-group">
-            <label>
-                提醒標語(直式)
-            </label>
+            <label>提醒標語(直式)</label>
             <div class="inline-images">
                 <div>
-                    <input type="checkbox" name="reminder-vertical-1">
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="reminder-vertical-1-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="reminder-vertical-1-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/一次拿一個，歡樂不減少.png" width="400" alt="提醒標語(直式)">
                 </div>
                 <div>
-                    <input type="checkbox" name="reminder-vertical-2">
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="reminder-vertical-2-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="reminder-vertical-2-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/玩具.png" width="400" alt="提醒標語(直式)">
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label>
-                團體室公告
-            </label>
-            <p>
-            <input type="checkbox" name="group-room-1">
-            <input type="checkbox" name="group-room-2">
-            </p>
+            <label>團體室公告</label>
             <div class="inline-images">
                 <div>
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="group-room-1-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="group-room-1-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/團體室使用公告.png" width="400" alt="團體室公告">
                 </div>
                 <div>
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="group-room-2-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="group-room-2-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/團體教室使用公告.png" width="400" alt="團體教室公告">
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label>
-                塗鴉牆公告
-            </label>
-            <div class="inline-images">
-                <input type="checkbox" name="graffiti-wall">
-                <img src="image/塗鴉牆使用方式公告.png" width="400" alt="塗鴉牆公告">
+            <label>塗鴉牆公告</label>
+            <div class="inline-checkbox">
+                <label><input type="checkbox" name="graffiti-wall-accept" value="可以採用">可以採用</label>
+                <label><input type="checkbox" name="graffiti-wall-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
             </div>
+            <img src="image/塗鴉牆使用方式公告.png" width="400" alt="塗鴉牆公告">
         </div>
         <div class="form-group">
-            <label>
-                多功能教室公告
-            </label>
+            <label>多功能教室公告</label>
             <div class="inline-images">
                 <div>
-                    <input type="checkbox" name="multi-purpose-room-1">
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="multi-purpose-room-1-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="multi-purpose-room-1-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/多功能教室.png" width="400" alt="多功能教室公告">
                 </div>
                 <div>
-                    <input type="checkbox" name="multi-purpose-room-2">
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="multi-purpose-room-2-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="multi-purpose-room-2-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/多功能教室01.png" width="400" alt="多功能教室公告">
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label>
-                爬行兒專區告示
-            </label>
-            <div class="inline-images">
-                <input type="checkbox" name="crawling-area">
-                <img src="image/爬行兒專區.png" width="400" alt="爬行兒專區告示">
+            <label>爬行兒專區告示</label>
+            <div class="inline-checkbox">
+                <label><input type="checkbox" name="crawling-area-accept" value="可以採用">可以採用</label>
+                <label><input type="checkbox" name="crawling-area-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
             </div>
+            <img src="image/爬行兒專區.png" width="400" alt="爬行兒專區告示">
         </div>
         <div class="form-group">
-            <label>
-                警示
-            </label>
+            <label>警示</label>
             <div class="inline-images">
                 <div>
-                    <input type="checkbox" name="warning-1">
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="warning-1-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="warning-1-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/警示.png" width="400" alt="警示">
                 </div>
                 <div>
-                    <input type="checkbox" name="warning-2">
+                    <div class="inline-checkbox">
+                        <label><input type="checkbox" name="warning-2-accept" value="可以採用">可以採用</label>
+                        <label><input type="checkbox" name="warning-2-reject" value="再想一下 謝謝!">再想一下 謝謝!</label>
+                    </div>
                     <img src="image/注意！.png" width="400" alt="警示">
                 </div>
             </div>
